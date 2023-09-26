@@ -1,0 +1,521 @@
+/* <!-- ______________________________________________________________________________________________________________________________________________________ -->
+                      <!-- Áudio amplo
+                 Desenvolvido por Astigmatic 
+                fonte da logo programadores brasil vai esta em brand--> */
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@500&display=swap');
+  /* ______________________________________________________________________________________________________________________________________________________ */
+                                /* Coda
+                         Design por Vernon Adams 
+                          fontes dos links vai esta no navigation */
+  @import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+  /* ______________________________________________________________________________________________________________________________________________________ */
+                                /* Goldman
+                        Design por Jaikishan Patel
+                        fontes de toda a paginal  vai esta no body*/
+    @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+  /* ______________________________________________________________________________________________________________________________________________________ */
+                                /* Gemunu Libre
+                            Desenvolvido por Mooniak.
+                            essa fonte vai esta em form, class="nav". */
+
+    @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+    /* ______________________________________________________________________________________________________________________________________________________ */
+/* _________________________________________________ */
+@media (max-width: 1050px){
+    header {
+        padding: 12px 20px;
+    }
+    section {
+        padding: 100px 200px;
+    }
+    .home .media-icons .icons {
+        display: flex;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(rgb(0, 8, 255), rgb(77, 1, 163), rgb(121, 3, 103), alpha);
+    }
+    header .navigation .navigation-items a{
+        color: rgb(255, 255, 255);
+        font-size: 1.3em;
+        margin: 20px;
+        box-shadow: 0 5px 25px rgb(63, 0, 71);
+        border-radius: 8px;
+    }
+    header .navigation .navigation-items a::before{
+        background: black;
+        height: 10px;
+    
+    }
+    header .navigation.active .navigation-items{
+        background: url(./Inicio/Img/fundo02.jpg) ;
+        background-size: 100vw;
+        border-radius: 20px;
+        box-shadow: inset -1px 2px 6px rgb(0, 0, 0);
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* box-shadow: 0 5px 25px rgb(1 1 1 ); */
+    }
+    .menu-btn{
+        background: url(./Inicio/Img/menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: 2.4s ease;
+    }
+
+    .menu-btn.active{
+        z-index: 999;
+        background: url(./Inicio/Img/menu2.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 1.3s ease;
+    }
+}
+
+
+/* _________________________________________________ */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+   
+}
+body{
+    color: aliceblue;
+    background-image: url(./Inicio/Img/fundo02.jpg);
+    background-size: cover;
+    font-family: 'Goldman', cursive; /*Goldman */
+    height: 100vw;
+    width: 100vw;
+}
+
+/* _________________________________________________ */
+
+/* inicio do menu */
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 100px;
+    transition: 0.5s ease;
+}
+header .brand{
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Audiowide', cursive; /* Áudio amplo */
+    font-family: 'Raleway', sans-serif;  /*  Áudio amplo */
+}
+header .navigation{
+    font-family: 'Coda', cursive; /* Coda font dos links*/
+    position: relative;
+}
+header .navigation-items a{
+   position: relative;
+   color: aliceblue;
+   font-size: 1em;
+   font-weight: 500;
+   text-decoration: none;
+   margin-left: 30px;
+   transition: 0.3s ease;
+}
+header .navigation .navigation-items a::before{
+    content: ' ';
+    position: absolute;
+    background: rgb(238, 255, 0);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.9s ease;
+}
+
+header .navigation .navigation-items a:hover::before{
+   width: 100%;
+}
+header .navigation-items a:hover{
+    transform: scale(1.3);
+}
+/* fim do menu */
+
+/* _________________________________________________ */
+
+/* inicio da section */
+section{
+    padding: 160px 100px;
+}
+
+.home{
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.home::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    /* background: url(../Img/fundo.jpg); */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home .content{
+   z-index: 888;
+   color: aliceblue;
+   width: 70%;
+   margin-top: 50px;
+}
+.content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+.content h1 span{
+   font-size: 1.2em;
+   font-weight: 600;
+}
+.content p{
+    margin-bottom: 65px;
+}
+/* botao */
+.content a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 12px 0;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 300;
+    color: aliceblue;
+    border: 2px solid rgb(32, 0, 119);
+    border-radius: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.content  a::before{
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(66, 2, 186, 0.505);
+    transition: width 1.5s;
+}
+.content  a::before{
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.content  a:hover::before{
+   width: 100%;
+}
+/* .content  a::before{
+    background-color: blue ;
+    padding: 1px 1px;
+    color: aliceblue;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+}
+/* final do butao*/
+
+.home .media-icons .icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.home .media-icons a{
+    color: aliceblue;
+    font-size: 2.6em;
+    transition: 0.5s ease;
+}
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+/* parte do video do fundo */
+.home video{
+   z-index: 000;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+/* .slider-navigation{
+   z-index: 888;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: translateY(80px);
+   margin-bottom: 12px;
+}
+.slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: aliceblue;
+    border-radius: 50vw;
+    cursor: pointer;
+    box-shadow: 0 0 2px aliceblue ;
+    transition: 0.3s ease;
+} */
+/* .slider-navigation .nav-btn.active{
+   background: blue;
+} */
+
+.slider-navigation .nav-btn:not(:last-child){
+   margin-right: 20px; 
+}
+.slider-navigation .nav-btn:hover{
+    transform: scale(2.5);
+}
+/* ______________________________________________________________ */
+
+/* Parte do formularios */
+.nav{
+    background: url(../Img/fundo02.jpg);
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 16vw;
+    font-family: 'Gemunu Libre', sans-serif;  /* Gemunu Libre */
+}
+.main{
+    display: flex;
+    height: 100vh;
+   
+    justify-content: center;
+    align-items: center;
+    /* background: url(../Img/fundo02.jpg);
+    background-size: cover; */
+}
+.conteiner__form{
+    height: 100vh;
+    margin-top: 60px;
+}
+
+
+.conteiner__form--12p{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(32, 0, 119, 0.378);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 12px;
+    box-shadow: inset -2px 2px 2px rgb(255, 0, 179);
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgb(0, 8, 161);
+    border-bottom: solid 1px aliceblue;
+}
+.form-title__2{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgb(0, 8, 161);
+    border-bottom: solid 1px aliceblue;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width: 95%;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width:95%;
+    border-radius: 7px;
+    outline: none;
+    border: 0 10px;
+}
+.gender-title{
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid aliceblue;
+}
+.gender-category{
+    margin: 15px 0;
+    color: aliceblue;
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+/* vou estilizar o butao de novo depois */
+.form-submit-btn{
+    margin-top: 40px;
+}
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-color: aliceblue;
+    border-radius: 12px;
+    background: url(none);
+    color: aliceblue;
+}
+
+.form-submit-btn input:hover{
+    background: url(../Img/fundo.jpg);
+    color: rgb(250, 0, 245);
+    transition: 0.3s ease;
+}
+/* vou estilizar o butao de novo depois */
+/* .floop{
+    position: absolute;
+    background: rgba(195, 0, 255, 0.381);
+    color: aliceblue;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.floop__02 p{
+    color: rgb(197, 197, 253);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons{
+    align-items: center;
+    justify-content: center;
+    
+}
+.icons a{
+    color: aliceblue;
+    margin-left: 70px;
+} */
+/* ______________________________________________________________ */
+@media(max-width: 600px){
+    .conteiner__form{
+        min-width: 280px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-pg{
+    width: 1px;
+}

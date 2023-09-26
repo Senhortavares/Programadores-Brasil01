@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Warlen Tavares">
+    <meta name="description" content="Meta Tags na Devmedia">
+    <meta name="keywords" content="sites, web, desenvolvimento">
+    
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/cddd640559.js" crossorigin="anonymous"></script>
+    
+    <!-- icons -->
+
+    <!-- fonts  -->
+    <!-- ______________________________________________________________________________________________________________________________________________________ -->
+                      <!-- Áudio amplo
+                 Desenvolvido por Astigmatic. 
+                fonte da logo programadores brasil.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!-- ______________________________________________________________________________________________________________________________________________________ -->
+                             <!-- Coda
+                       Design por Vernon Adams. 
+                       fontes dos links. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+    <!-- ______________________________________________________________________________________________________________________________________________________ -->
+                            <!-- Goldman
+                       Design por Jaikishan Patel.
+                       fontes de toda a paginal. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <!-- ______________________________________________________________________________________________________________________________________________________ -->
+                             <!-- Gemunu Libre
+                          Desenvolvido por Mooniak.
+                        essa fonte vai esta em form, class="nav".-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <!-- ______________________________________________________________________________________________________________________________________________________ -->
+
+
+    <!-- fonts  -->
+    <link rel="stylesheet"  href="style.css"/>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>PROGRAMADORES-BRASIL</title>
+</head>
+<body>
+
+    <!-- menu -->
+    <header>
+        <a href="/Inicio.html" class="brand">PROGRAMADORES<br/> BRASIL</a>
+        <div class="menu-btn"></div> <!-- essa dive esta inativa ater achar um ultilidade para ela -->
+         <div class="navigation"> <!--  div navigation -->
+            <div class="navigation-items"><!--  div navigation navigation-items -->
+              <a href="./Inicio/Equipe/equipe.html">Equipe</a>
+              <a href="./Inicio/Projetos/projeto.html">Projetos</a>
+              <a href="./Inicio/Recrutamento/form.html" onclick="mostrar()">Seja um de nós</a>
+              <a href="./Inicio/Sobre/sobre.html">Sobre Nós</a>
+            </div><!--  div navigation navigation-items -->
+          </div> <!--  div navigation -->         
+    </header>
+    <!-- menu -->
+
+     <!-- inicio da section home -->
+    <section class="home">
+        <video class="video-slide" src="/Inicio/video/fuego-blue.mp4" autoplay muted loop>
+
+        </video>
+        <div class="content"><!-- class="content" -->
+
+            <h1>Sejam <span>Bem Vindos!</span></h1>
+            <p>o grupo programadores brasil te deseja uma boa navegaçao<br>
+            seja bem vido ao programadores brasil!</p>
+            <a  href="https://chat.whatsapp.com/EKpHCVqayuR9xCZG1Q10JL" target="_blank">Grupo-WhatsApp</a><!--grupo do whassapp-->
+        </div><!-- class="content" -->
+
+        <div class="media-icons"><!-- parte dos icons das redes sociais -->
+            <div class="icons"><!-- insta, discord, whatsapp -->
+                <a href="https://instagram.com/brasil_programadores_?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a><!-- icons instagram -->
+                <a href="https://discord.gg/hyf7FA6f" target="_blank"><i class="fa-brands fa-discord" ></i></a><!-- icons discord -->
+            </div><!-- insta, discord, -->
+            <!-- <div class="slider-navigation">slider-navigation
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>slider-navigation -->
+       </div><!-- parte dos icons das redes sociais -->
+    </section>
+     <!-- final da section home -->
+<nav class="nav">
+<main class="main"><!-- conteiner__form -->
+     <div class="conteiner__form"><!--conteiner__form -->
+        <div class="conteiner__form--12p"><!--conteiner__form--12p -->
+            <h1 class="form-title">Venha fazer seu site.</h1>
+             <h2 class="form-title__2">Preencha o Formulário.</h2>
+            <form id="form" action="https://api.sheetmonkey.io/form/pqootijxWEQVKs2S7rghmt" method="post">
+               <div class="main-user-info"><!--main-user-info-->
+                <!-- ______________________________________________________________________ -->
+                 <div class="user-input-box"><!--user-input-box-->
+                    <label name="Nome:" for="fullName">Seu Nome:</label>
+                    <input name="Nome:" type="name" id="fullName" placeholder="Nome completo:" required/>
+                 </div><!--user-input-box-->
+
+                 <div class="user-input-box"><!--user-input-box-->
+                    <label name="email:" for="fullName">Email</label>
+                    <input name="email:" type="email" id="username" placeholder="Email:" required/>
+                 </div><!--user-input-box-->
+
+                 <div class="user-input-box"><!--user-input-box-->
+                    <label name="whatsapp:" for="phoneNuber">WhassApp:</label>
+                    <input name="whatsapp:" type="number" id="email" placeholder="WhassApp:(**) ****-*****" required/>
+                 </div><!--user-input-box-->
+                <!-- ______________________________________________________________________ -->
+               </div><!--main-user-info -->
+               <div class="gender-details-box"><!--gender-details-box -->
+                   <span class="gender-title">Género</span>
+                     <div class="gender-category"><!--gender-category -->
+                        <input class="checkbox" type="checkbox" name="masculino" id="male">
+                        <label name="masculino" for="male">Masculino</label>
+
+                        <input class="checkbox" type="checkbox" name="femenino" id="female">
+                        <label name="femenino" for="female">Feminino</label>
+
+                        <input class="checkbox" type="checkbox" name="outros" id="other">
+                        <label name="outros" for="other">Outros</label>
+                     </div><!--gender-category -->
+               </div><!--gender-details-box -->
+                <div class="form-submit-btn"><!--form-submit-btn-->
+                    <input type="submit" value="Enviar">
+                </div><!--form-submit-btn-->
+            </form>
+        </div><!--conteiner__form--12p -->
+    </div><!--conteiner__form -->
+</main>
+</nav>
+
+ <!-- //depois tem que colocar os 
+    <div class="floop">floop     
+        <div class="floop__02"> floop__02
+            <p>Warlen Lucas Tavares Da Cunha © - 2023</p>
+            <p>warlenlucastavares@gmail.com</p>
+            <div class="icons"> icons
+                <div class="foop__icons--02"> foop__icons--02 
+                    <a href="https://instagram.com/brasil_programadores_?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://discord.gg/hyf7FA6f"><i class="fa-brands fa-discord"></i></a>
+                </div> foop__icons--02
+            </div> icons
+        </div>  floop__02
+    </div>  -->
+
+<script src="/js-menu/index.js"></script><!-- javascript do menu -->
+<script src="index.js"></script>
+</body>
+</html>
